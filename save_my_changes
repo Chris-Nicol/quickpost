@@ -15,8 +15,8 @@ end
 
 
 if (branch_name != "")
-  git commit(branch_name)
-  git push origin
+  commit(branch_name)
+  `git push origin`
 end
 
 `git commit -m "no message"`
