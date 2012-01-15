@@ -11,7 +11,7 @@ branch_name = readline.chomp.strip.gsub(" ","_").downcase
 
 
 if (branch_name != "")
-  `git commit -m "(branch_name)"`
+  `git commit -m (branch_name)`
 end
 
 `git push origin`

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace quickpost.specs.apis
 {
-    class ConnectionFactory
+    public class ConnectionFactory
     {
     }
 }
