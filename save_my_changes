@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require_relative 'git_utils.rb'
+
+exit_if_on_the_master_branch
+
+`git a`
+
+puts "Enter a commit comment..."
+branch_name = readline.chomp.strip.gsub(" ","_").downcase
+
+
+if (branch_name != "")
+  `git commit -m "(branch_name)"`
+end
+
+`git push origin`
+
