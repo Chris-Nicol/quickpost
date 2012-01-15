@@ -7,15 +7,5 @@ def install_utilities
   `bundle install`
 end
 
-def configure_remote
-  `git remote rm jp`
-  `git remote add jp git://github.com/20111121iqmetrix/prep.git`
-end
-
-def create_first_branch
-  checkout("start_of_week")
-end
 
 install_utilities
-configure_remote
-create_first_branch

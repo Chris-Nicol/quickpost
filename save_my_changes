@@ -9,10 +9,16 @@ exit_if_on_the_master_branch
 puts "Enter a commit comment..."
 branch_name = readline.chomp.strip.gsub(" ","_").downcase
 
-
-if (branch_name != "")
-  `git commit -m branch_name`
+def commit(branch_name)
+  `git ci #{branch_name}`
 end
 
+
+if (branch_name != "")
+  git commit(branch_name)
+  git push origin
+end
+
+`git commit -m "no message"`
 `git push origin`
 

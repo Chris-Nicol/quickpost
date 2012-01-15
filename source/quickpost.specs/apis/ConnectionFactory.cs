@@ -7,5 +7,7 @@ namespace quickpost.specs.apis
 {
     public class ConnectionFactory
     {
+        private double something;
+
     }
 }
