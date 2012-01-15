@@ -1,0 +1,5 @@
+C:\Code\Personal\quickpost\obj\Debug\ResolveAssemblyReference.cache
+C:\Code\Personal\quickpost\bin\Debug\build.dll
+C:\Code\Personal\quickpost\bin\Debug\build.pdb
+C:\Code\Personal\quickpost\obj\Debug\build.dll
+C:\Code\Personal\quickpost\obj\Debug\build.pdb

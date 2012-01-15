@@ -31,7 +31,92 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="build.bat" />
+    <None Include="build\support\001_utils\configatron.rb" />
+    <None Include="build\support\001_utils\file.rb" />
+    <None Include="build\support\001_utils\string.rb" />
+    <None Include="build\support\001_utils\template_file.rb" />
+    <None Include="build\support\001_utils\unique_files.rb" />
+    <None Include="build\support\001_utils\windows\msbuild_runner.rb" />
+    <None Include="build\support\001_utils\windows\sevenzip.rb" />
+    <None Include="build\support\002_configuration\git.rb" />
+    <None Include="build\support\002_configuration\project.rb" />
+    <None Include="build\support\002_configuration\windows\db.rb" />
+    <None Include="build\support\002_configuration\windows\db_dev.rb.customize" />
+    <None Include="build\support\002_configuration\windows\machine_specs.rb" />
+    <None Include="build\support\003_tasks\01_templates.rb" />
+    <None Include="build\support\003_tasks\configuration.rb" />
+    <None Include="build\support\003_tasks\windows\01_templates.rb" />
+    <None Include="build\support\003_tasks\windows\build.rb" />
+    <None Include="build\support\003_tasks\windows\configuration.rb" />
+    <None Include="build\support\003_tasks\windows\db.rb.ignore" />
+    <None Include="build\support\003_tasks\windows\git.rb" />
+    <None Include="build\support\003_tasks\windows\growl.rb" />
+    <None Include="build\support\003_tasks\windows\machine_specs.rb" />
+    <None Include="build\tools\growl\Growl.exe.config" />
+    <None Include="build\tools\growl\Growl.exe.manifest" />
+    <None Include="build\tools\growl\Growl.InstallState" />
+    <None Include="build\tools\growl\growlnotify.com" />
+    <None Include="build\tools\growl\icons_license.pdf" />
+    <None Include="build\tools\growl\proxy.config" />
+    <None Include="build\tools\growl\update.manifest" />
+    <None Include="build\tools\sql_metal\SqlMetal.exe.config" />
+    <None Include="change" />
+    <None Include="continuous_testing" />
+    <None Include="fetch_latest" />
+    <None Include="Gemfile" />
+    <None Include="git_utils.rb" />
+    <None Include="push" />
+    <None Include="rakefile.rb" />
+    <None Include="run_first" />
+    <None Include="save_my_changes" />
+    <None Include="start_new_exercise" />
+    <None Include="trash" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build\tools\growl\flashpolicy.xml" />
+    <Content Include="build\tools\growl\green.jpg" />
+    <Content Include="build\tools\growl\Growl.Connector.dll" />
+    <Content Include="build\tools\growl\Growl.CoreLibrary.dll" />
+    <Content Include="build\tools\growl\Growl.Daemon.dll" />
+    <Content Include="build\tools\growl\Growl.Destinations.dll" />
+    <Content Include="build\tools\growl\Growl.Displays.Plain.dll" />
+    <Content Include="build\tools\growl\Growl.Displays.Smokestack.dll" />
+    <Content Include="build\tools\growl\Growl.Displays.Standard.dll" />
+    <Content Include="build\tools\growl\Growl.Displays.Toast.dll" />
+    <Content Include="build\tools\growl\Growl.Displays.Visor.dll" />
+    <Content Include="build\tools\growl\Growl.DisplayStyle.dll" />
+    <Content Include="build\tools\growl\Growl.exe" />
+    <Content Include="build\tools\growl\Growl.UDPLegacy.dll" />
+    <Content Include="build\tools\growl\growlnotify.exe" />
+    <Content Include="build\tools\growl\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="build\tools\growl\installer.jpg" />
+    <Content Include="build\tools\growl\license.txt" />
+    <Content Include="build\tools\growl\Mono.Zeroconf.dll" />
+    <Content Include="build\tools\growl\Mono.Zeroconf.Providers.Bonjour.dll" />
+    <Content Include="build\tools\growl\Newtonsoft.Json.dll" />
+    <Content Include="build\tools\growl\red.jpg" />
+    <Content Include="build\tools\growl\release_notes.txt" />
+    <Content Include="build\tools\growl\Third Party Assemblies\Mono.Zeroconf.dll" />
+    <Content Include="build\tools\growl\Third Party Assemblies\Mono.Zeroconf.Providers.Bonjour.dll" />
+    <Content Include="build\tools\growl\TrackBar.dll" />
+    <Content Include="build\tools\sql_metal\SqlMetal.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="build\tasks\" />
+    <Folder Include="build\tools\Rake\bin\" />
+    <Folder Include="build\tools\Rake\lib\ruby\1.8\date\" />
+    <Folder Include="build\tools\Rake\lib\ruby\1.8\i386-mswin32\digest\" />
+    <Folder Include="build\tools\Rake\lib\ruby\1.8\i386-mswin32\io\" />
+    <Folder Include="build\tools\Rake\lib\ruby\1.8\i386-mswin32\racc\" />
+    <Folder Include="build\tools\Rake\lib\ruby\1.8\i386-mswin32\win32\" />
+    <Folder Include="build\tools\Rake\lib\ruby\1.8\win32\" />
+    <Folder Include="build\tools\Rake\lib\ruby\1.8\yaml\" />
+    <Folder Include="build\tools\Rake\lib\ruby\site_ruby\1.8\configatron\core_ext\" />
+    <Folder Include="build\tools\Rake\lib\ruby\site_ruby\1.8\rake\contrib\" />
+    <Folder Include="build\tools\Rake\lib\ruby\site_ruby\1.8\rake\loaders\" />
+    <Folder Include="build\tools\Rake\lib\ruby\site_ruby\1.8\yamler\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
