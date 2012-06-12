@@ -21,7 +21,3 @@ end
 
 `git commit -m "no message"`
 `git push origin`
-
-
-
-on develop
