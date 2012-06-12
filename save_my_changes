@@ -7,21 +7,17 @@ exit_if_on_the_master_branch
 `git a`
 
 puts "Enter a commit comment..."
-branch_name = readline.chomp.strip.gsub(" ","_").downcase
+commit_message = readline.chomp.strip.gsub(" ","_").downcase
 
-def commit(branch_name)
-  `git ci #{branch_name}`
+def commit(commit_message)
+  `git ci #{commit_message}`
 end
 
 
-if (branch_name != "")
-  commit(branch_name)
+if (commit_message != "")
+  commit(commit_message)
   `git push origin`
 end
 
 `git commit -m "no message"`
 `git push origin`
-
-
-
-change from testingbranch
