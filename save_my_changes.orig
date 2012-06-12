@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+require_relative 'git_utils.rb'
+
+exit_if_on_the_master_branch
+
+`git a`
+
+puts "Enter a commit comment..."
+commit_message = readline.chomp.strip.gsub(" ","_").downcase
+
+def commit(commit_message)
+  `git ci #{commit_message}`
+end
+
+
+if (commit_message != "")
+  commit(commit_message)
+  `git push origin`
+end
+
+`git commit -m "no message"`
+<<<<<<< HEAD
+`git push origin`
+=======
+`git push origin`
+
+
+
+on develop
+>>>>>>> develop
